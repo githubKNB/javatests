@@ -12,13 +12,21 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
+import org.javaeightstudies.common.BaseJavaTest;
+
 /**
  * @author niranjanb
  * https://www.oreilly.com/learning/java-8-functional-interfaces
  */
-public class PreBuildFunctionsTest {
+public class PreBuildFunctionsTest extends BaseJavaTest {
 
-	public static void letsGo(){
+	private PreBuildFunctionsTest(){}
+	
+	public static PreBuildFunctionsTest getInstance(){
+		PreBuildFunctionsTest preBuildFunctionsTest = new PreBuildFunctionsTest();
+		return preBuildFunctionsTest;
+	}
+	public void letsGo(){
 		predicateTest();
 		System.out.println("");
 		System.out.println("=========================================");

@@ -3,12 +3,22 @@
  */
 package org.javaeightstudies.javalambda.testrunnable;
 
+import org.javaeightstudies.common.BaseJavaTest;
+
 /**
  * @author niranjanb
  * http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html
  */
-public class RunnableTest {
-	public static void letsGo(){
+public class RunnableTest extends BaseJavaTest {
+	
+	private RunnableTest(){}
+	
+	public static RunnableTest getInstance(){
+		RunnableTest runnableTest = new RunnableTest();
+		return runnableTest;
+	}
+	
+	public void letsGo(){
 		System.out.println("RunnableTest Start");
 		
 		//Anonymous runnable pre java 8

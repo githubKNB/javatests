@@ -7,13 +7,21 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import org.javaeightstudies.common.BaseJavaTest;
+
 /**
  * @author niranjanb
  *http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html
  */
-public class ComparatorTest {
+public class ComparatorTest extends BaseJavaTest {
 
-	public static void letsGo(){
+	private ComparatorTest(){}
+	
+	public static ComparatorTest getInstance(){
+		ComparatorTest comparatorTest = new ComparatorTest();
+		return comparatorTest;
+	}
+	public void letsGo(){
 		
 		List<Person> personList = Person.createShortLst();
 		
