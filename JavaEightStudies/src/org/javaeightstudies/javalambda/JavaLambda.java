@@ -17,8 +17,8 @@ public class JavaLambda {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		RunnableTest.letsGo();
-		ComparatorTest.letsGo();
+		RunnableTest.getInstance().letsGo();
+		ComparatorTest.getInstance().letsGo();
 	}
 
 }

@@ -109,7 +109,7 @@ public class Person {
 	}
 	
 	public static List<Person> createShortLst(){
-		List<Person> personList = new ArrayList();
+		List<Person> personList = new ArrayList<Person>();
 		
 		for(int i = 0 ; i < 10 ; i++){
 			Person person = new Person();

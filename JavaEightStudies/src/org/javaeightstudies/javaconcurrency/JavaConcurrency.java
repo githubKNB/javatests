@@ -15,6 +15,7 @@ public class JavaConcurrency {
 	public static void main(String[] args) {
 		ExecutorTest.getInstance().letsGo();
 		CallableAndFuturesTest.getInstance().letsGo();
+		LocksTest.getInstance().letsGo();
 	}
 
 }
