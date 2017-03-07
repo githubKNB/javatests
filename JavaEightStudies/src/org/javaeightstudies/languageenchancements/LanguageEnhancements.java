@@ -13,7 +13,8 @@ public class LanguageEnhancements {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		PreBuildFunctionsTest.letsGo();
+		
+		PreBuildFunctionsTest.getInstance().letsGo();
 	}
 
 }
