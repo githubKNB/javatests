@@ -28,9 +28,21 @@ public class RunnableTest extends BaseJavaTest {
 				System.out.println("Hello from Pre Java 8");
 			}
 		};
+		Thread thread1 = new Thread(r1);
+		thread1.start();
 		
 		// Java 8 runnable
-		Runnable r2 = () -> System.out.println("Hello from Java 8");
+		Runnable r2 = () -> {
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				System.out.println("Thread active.");
+			} 
+			
+			System.out.println("Hello from Java 8");
+			};
+		Thread thread2 = new Thread(r2);
+		thread2.start();
 		
 		System.out.println("RunnableTest End");
 	}
